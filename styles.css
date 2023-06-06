@@ -1,0 +1,38 @@
+.container1 {
+    display: flex;
+    color: white;
+}
+
+.container1 > * {
+    width: 33%;
+}
+
+.container1 img {
+    width: 100%;
+}
+
+.photoRow1\.2\.1 {
+    border-radius: 50%;
+}
+
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 25vw;
+    background: rgb(250,120,5);
+    z-index: -1;
+}
+
+@media (min-width:1200px) {
+    body::before {
+        min-height: 300px;
+    }
+}
